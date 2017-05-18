@@ -5,7 +5,6 @@
 
 extern xSemaphoreHandle currentTrainSemaphore;
 extern unsigned int OLED_Disable;
-
 void currentTrain(void* data){
   
   currentTrainData* myctd = (currentTrainData*) data;

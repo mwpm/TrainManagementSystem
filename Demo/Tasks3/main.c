@@ -116,6 +116,11 @@ and the TCP/IP stack together cannot be accommodated with the 32K size limit. */
 #include "header.h"
 #include "constantDefs.h"
 
+#include "sysctl.h"
+#include "hw_memmap.h"
+#include "adc.h"
+#include "rom.h"
+
 /*-----------------------------------------------------------*/
 
 /* 
@@ -259,6 +264,11 @@ double slope = 0.3;
 unsigned int suspend = 1;
 unsigned int OLED_Disable = 0;
 
+// this is for storing samples
+unsigned long ulADCval[8]; //store the samples
+int voltage;
+
+
 int main( void )
 {
     prvSetupHardware();
@@ -379,7 +389,7 @@ int main( void )
     xTaskCreate(trainCom, "Train Com", 1024, (void*)&myTrainComData, 1, NULL);
     xTaskCreate(switchControl, "Switch Control", 1024, (void*)&mySwitchControlData, 3, NULL);
     xTaskCreate(currentTrain,"Current Train", 1024, (void*)&myCurrentTrainData, 1, NULL);
-    xTaskCreate(schedule,"Schedule", 1024, (void*)&myScheduleData, 4 , NULL);
+    xTaskCreate(schedule,"Schedule", 1024, (void*)&myScheduleData, 5 , NULL);
     xTaskCreate(serialCom,"Serial Com", 1024, (void*)&mySerialComData,1, NULL);
     
     /* 
@@ -564,6 +574,66 @@ void prvSetupHardware( void )
    IntEnable(INT_GPIOB); 
    
    GPIOPinIntEnable(GPIO_PORTB_BASE, GPIO_PIN_0); 
+   
+     //-------------------for - ADC--------------------------------//
+
+  // Enable the clock to the ADC module
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC);
+  // set Port B Pin 1 as analog input
+  GPIOPinTypeADC(ADC_BASE, GPIO_PIN_1);
+   //Enable the pull up so the pin isn't floating
+   GPIOPadConfigSet(GPIO_PORTB_BASE, GPIO_PIN_7, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPD);
+   
+
+  // Configure the ADC to sample at 500KSps
+  //SysCtlADCSpeedSet(SYSCTL_ADCSPEED_500KSPS );
+
+  // Disable sample sequences 0
+  ADCSequenceDisable(ADC_BASE, 3);
+
+  // Configure sample sequence 1: timer trigger, priority = 0
+  ADCSequenceConfigure(ADC_BASE, 3, ADC_TRIGGER_PROCESSOR, 0);
+
+  // Configure sample sequence 1 steps 0, 1 and 2
+  //ADCSequenceStepConfigure(ADC_BASE, 1, 0, ADC_CTL_CH0);
+  ADCSequenceStepConfigure(ADC_BASE, 3, 0, ADC_CTL_CH0 | ADC_CTL_IE | ADC_CTL_END);
+
+  // Enable sample sequence 0.
+  ADCSequenceEnable(ADC_BASE, 3);
+
+  // Enable the interrupt for sample sequence 0
+  //ADCIntEnable(ADC0_BASE, 0);
+  //IntEnable(INT_ADC0);
+  
+  // Clear the interrupt status flag.
+  ADCIntClear(ADC_BASE, 3);
+
+
+   
+   
+   
+
+    ADCProcessorTrigger(ADC_BASE, 3);
+    while(!ADCIntStatus(ADC_BASE, 3, false))
+     {
+     }
+
+    ADCIntClear(ADC_BASE, 3);
+   
+   //Wait until the sample sequence has completed.
+   
+     voltage = ADCSequenceDataGet(ADC_BASE, 3, &ulADCval);
+        
+       ADCProcessorTrigger(ADC_BASE, 3);
+    while(!ADCIntStatus(ADC_BASE, 3, false))
+     {
+     }
+
+    ADCIntClear(ADC_BASE, 3);
+   
+   //Wait until the sample sequence has completed.
+   
+     voltage = ADCSequenceDataGet(ADC_BASE, 3, &ulADCval);
 }
 
     
@@ -628,7 +698,7 @@ extern void IntGPIOe(void){
 void schedule(void* data)
 {
   scheduleData* mysd = (scheduleData*) data;
-  extern unsigned int OLED_Disable;
+  
   xOLEDMessage xMessage;
   
   //initialially the list is empty
@@ -668,7 +738,7 @@ void schedule(void* data)
         }
         
         xSemaphoreGive(serialComSemaphore);
-        *mysd->timerState = 0;
+        //*mysd->timerState = 0;
       
         frequencyCounter(); 
 			
@@ -680,7 +750,7 @@ void schedule(void* data)
 	if(OLED_Disable){
 		RIT128x96x4Clear();
 	}
-  *mysd->timerState = 0;
+
   vTaskDelay(500 / portTICK_RATE_MS); //500mS 
   }
 }

@@ -318,7 +318,6 @@ char *c, *pcText;
 static portCHAR cMessageForDisplay[ 32 ];
 extern unsigned int suspend;
 extern unsigned int OLED_Disable;
-
 ////
 //extern xQueueHandle xOLEDQueue;
 //xOLEDMessage xOLEDMessage;

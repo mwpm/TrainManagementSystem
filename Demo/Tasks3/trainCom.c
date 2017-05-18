@@ -10,7 +10,6 @@ extern xSemaphoreHandle switchControlSemaphore;
 extern unsigned int payload;
 extern unsigned int trainComFlag;
 extern unsigned int OLED_Disable;
-
 void trainCom(void* data)
 {
   // re-cast the void pointer 
