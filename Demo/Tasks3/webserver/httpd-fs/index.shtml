@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Smart Train Manager</title>
+  </head>
+  <BODY onLoad="window.setTimeout(&quot;location.href='index.shtml'&quot;,10000)"bgcolor="fffffff">
+<font face="arial">
+
+<br><p>
+<hr>
+<font face="arial" size = "7">
+<b><center>Awesome Train Manager</b><br>
+<img src="mapbuttons.gif" alt="Train buttons">
+</center>
+<p>
+</font>
+
+<h4>Train info:</h4>
+<table width="300" border="0">
+<tr><td align="left">
+<br>
+<pre>
+Size :
+From :
+To   :
+Load :
+Wait :
+</pre>
+
+</td>
+<td>%! train-stats
+</table>
+<p>
+
+<p>
+<form name="aForm" action="/io.shtml" method="get">
+%! led-io
+<p>
+<input type="submit" value="Update IO">
+</form>
+
+
+<br><p>
+</font>
+</body>
+</html>
+

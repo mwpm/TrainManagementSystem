@@ -1,0 +1,647 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.10.2.52244/W32 for ARM              14/Jul/2012  16:56:44 #
+# Copyright 2007-2010 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Exe\RTOSDemo.out                            #
+#    Map file     =  C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\List\RTOSDemo.map                           #
+#    Command line =  C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\BlockQ.o C:\StellarisWare\boards\FreeRT #
+#                    OS\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\GenQTest.o    #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\IntQueue.o                              #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\IntQueueTimer.o                         #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\ParTest.o C:\StellarisWare\boards\FreeR #
+#                    TOS\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\PollQ.o      #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\QPeek.o C:\StellarisWare\boards\FreeRTO #
+#                    S\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\blocktim.o     #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\death.o C:\StellarisWare\boards\FreeRTO #
+#                    S\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\emac.o         #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\flash.o C:\StellarisWare\boards\FreeRTO #
+#                    S\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\formike128x128 #
+#                    x16.o C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sx #
+#                    xxx_IAR_Keil\Debug\Obj\heap_2.o                          #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\http-strings.o                          #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\httpd-cgi.o                             #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\httpd-fs.o                              #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\httpd.o C:\StellarisWare\boards\FreeRTO #
+#                    S\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\integer.o      #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\list.o C:\StellarisWare\boards\FreeRTOS #
+#                    \Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\main.o          #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\osram128x64x4.o                         #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\port.o C:\StellarisWare\boards\FreeRTOS #
+#                    \Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\portasm.o       #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\psock.o C:\StellarisWare\boards\FreeRTO #
+#                    S\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\queue.o        #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\recmutex.o                              #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\rit128x96x4.o                           #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\semtest.o C:\StellarisWare\boards\FreeR #
+#                    TOS\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\startup_ewar #
+#                    m.o C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxx #
+#                    x_IAR_Keil\Debug\Obj\tasks.o                             #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\timer.o C:\StellarisWare\boards\FreeRTO #
+#                    S\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\timertest.o    #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\uIP_Task.o                              #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\Debug\Obj\uip.o C:\StellarisWare\boards\FreeRTOS\ #
+#                    Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj\uip_arp.o        #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\Common\drivers\Lum #
+#                    inaryMicro\IAR\driverlib.a C:\StellarisWare\boards\FreeR #
+#                    TOS\Demo\Common\drivers\LuminaryMicro\IAR\grlib.a        #
+#                    --redirect _Printf=_PrintfSmall --redirect               #
+#                    _Scanf=_ScanfSmall -o C:\StellarisWare\boards\FreeRTOS\D #
+#                    emo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Exe\RTOSDemo.out      #
+#                    --map C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sx #
+#                    xxx_IAR_Keil\Debug\List\RTOSDemo.map --config            #
+#                    C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IA #
+#                    R_Keil\LM3Sxxxx.icf C:\StellarisWare\boards\FreeRTOS\Dem #
+#                    o\CORTEX_LM3Sxxxx_IAR_Keil\..\Common\drivers\LuminaryMic #
+#                    ro\IAR\driverlib.a C:\StellarisWare\boards\FreeRTOS\Demo #
+#                    \CORTEX_LM3Sxxxx_IAR_Keil\..\Common\drivers\LuminaryMicr #
+#                    o\IAR\grlib.a --entry __iar_program_start                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** MESSAGES
+***
+
+Warning[Lt010]: Inconsistent enum container size
+          C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\
+                    Obj\uIP_Task.o uses smallest possible
+          flash.o(driverlib.a) uses word size
+
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at start of [0x00000000-0x0003ffff] { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0003ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2000ffff] { rw, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x100
+  .intvec            const    0x00000000   0x100  startup_ewarm.o [1]
+                            - 0x00000100   0x100
+
+"P1":                                     0x5064
+  .rodata            const    0x00000100  0x1360  main.o [1]
+  .text              ro code  0x00001460   0x664  tasks.o [1]
+  .text              ro code  0x00001ac4    0xd8  heap_2.o [1]
+  .text              ro code  0x00001b9c    0x38  ABImemset48.o [6]
+  .text              ro code  0x00001bd4    0x6c  strncpy.o [6]
+  .text              ro code  0x00001c40    0x92  list.o [1]
+  .text              ro code  0x00001cd2    0x22  zero_init3.o [6]
+  .text              ro code  0x00001cf4    0xa0  port.o [1]
+  CODE               ro code  0x00001d94    0x8c  portasm.o [1]
+  .text              ro code  0x00001e20   0x1e2  main.o [1]
+  .text              ro code  0x00002002     0xa  xsprout.o [3]
+  .text              ro code  0x0000200c    0x62  memcmp.o [6]
+  .text              ro code  0x0000206e     0x6  startup_ewarm.o [1]
+  .text              ro code  0x00002074    0x66  ABImemset.o [6]
+  .rodata            const    0x000020da     0x2  osram128x64x4.o [1]
+  .text              ro code  0x000020dc   0x29c  sysctl.o [4]
+  .text              ro code  0x00002378   0x120  gpio.o [4]
+  .text              ro code  0x00002498    0x2c  ParTest.o [1]
+  .text              ro code  0x000024c4   0x2fe  queue.o [1]
+  .text              ro code  0x000027c4    0x80  integer.o [1]
+  .text              ro code  0x00002844    0xd4  death.o [1]
+  .text              ro code  0x00002918    0xb4  timertest.o [1]
+  .text              ro code  0x000029cc    0x34  sprintf.o [3]
+  .text              ro code  0x00002a00    0x70  ABImemcpy.o [6]
+  .text              ro code  0x00002a70    0x58  timer.o [4]
+  .text              ro code  0x00002ac8    0x8c  interrupt.o [4]
+  .text              ro code  0x00002b54   0x470  xprintfsmall.o [3]
+  .text              ro code  0x00002fc4    0x16  strchr.o [6]
+  .text              ro code  0x00002fdc    0x58  memchr.o [6]
+  .text              ro code  0x00003034    0x36  strlen.o [6]
+  .rodata            const    0x0000306c   0x514  fontcmss12.o [5]
+  .text              ro code  0x00003580   0x4c0  formike128x128x16.o [1]
+  .text              ro code  0x00003a40   0x290  string.o [5]
+  .text              ro code  0x00003cd0    0x20  context.o [5]
+  .text              ro code  0x00003cf0    0xb4  rectangle.o [5]
+  .text              ro code  0x00003da4   0x2cc  image.o [5]
+  .text              ro code  0x00004070    0x4c  line.o [5]
+  .text              ro code  0x000040bc     0x6  ABImemclr4.o [6]
+  .text              ro code  0x000040c4   0x2e0  rit128x96x4.o [1]
+  .text              ro code  0x000043a4    0x88  ssi.o [4]
+  .text              ro code  0x0000442c   0x2bc  osram128x64x4.o [1]
+  .text              ro code  0x000046e8   0x1f0  IntQueue.o [1]
+  .rodata            const    0x000048d8   0x1ec  osram128x64x4.o [1]
+  .rodata            const    0x00004ac4   0x1e2  rit128x96x4.o [1]
+  .rodata            const    0x00004ca8    0xc8  fontcmss12.o [5]
+  .text              ro code  0x00004d70    0xa8  packbits_init3.o [6]
+  .rodata            const    0x00004e18    0x5c  sysctl.o [4]
+  .rodata            const    0x00004e74    0x50  osram128x64x4.o [1]
+  .rodata            const    0x00004ec4    0x50  rit128x96x4.o [1]
+  .text              ro code  0x00004f14    0x48  emac.o [1]
+  .text              ro code  0x00004f5c    0x20  ethernet.o [4]
+  .rodata            const    0x00004f7c    0x40  interrupt.o [4]
+  .text              ro code  0x00004fbc    0x34  IntQueueTimer.o [1]
+  .text              ro code  0x00004ff0    0x2c  data_init3.o [6]
+  .rodata            const    0x0000501c    0x28  formike128x128x16.o [1]
+  .iar.init_table    const    0x00005044    0x2c  - Linker created -
+  .text              ro code  0x00005070    0x16  cmain.o [6]
+  .text              ro code  0x00005086     0x4  low_level_init.o [3]
+  .text              ro code  0x0000508a     0x8  exit.o [3]
+  .text              ro code  0x00005094     0xa  cexit.o [6]
+  .text              ro code  0x000050a0     0xc  XXexit.o [6]
+  .rodata            const    0x000050ac    0x14  tasks.o [1]
+  .rodata            const    0x000050c0    0x10  death.o [1]
+  .rodata            const    0x000050d0    0x10  main.o [1]
+  .rodata            const    0x000050e0    0x10  sysctl.o [4]
+  .rodata            const    0x000050f0     0xc  rit128x96x4.o [1]
+  .rodata            const    0x000050fc     0xc  sysctl.o [4]
+  .text              ro code  0x00005108     0xc  cstartup_M.o [6]
+  .rodata            const    0x00005114     0x8  death.o [1]
+  .rodata            const    0x0000511c     0x8  formike128x128x16.o [1]
+  .rodata            const    0x00005124     0x8  integer.o [1]
+  .rodata            const    0x0000512c     0x8  main.o [1]
+  .rodata            const    0x00005134     0x8  main.o [1]
+  .rodata            const    0x0000513c     0x8  tasks.o [1]
+  Initializer bytes  ro data  0x00005144    0x1f  <for P2 s0>
+                            - 0x00005163  0x5063
+
+"P2", part 1 of 3:                         0x108
+  P2 s0                       0x20000000   0x104  <Init block>
+    .data            inited   0x20000000    0x6c  tasks.o [1]
+    .data            inited   0x2000006c    0x54  IntQueue.o [1]
+    .data            inited   0x200000c0    0x28  main.o [1]
+    .data            inited   0x200000e8     0xc  death.o [1]
+    .data            inited   0x200000f4     0xc  heap_2.o [1]
+    .data            inited   0x20000100     0x4  port.o [1]
+                            - 0x20000104   0x104
+
+"P2", part 2 of 3:                        0x60b8
+  .bss               zero     0x20000108  0x5dcc  heap_2.o [1]
+  .bss               zero     0x20005ed4    0xc8  IntQueue.o [1]
+  .bss               zero     0x20005f9c    0xc8  IntQueue.o [1]
+  .bss               zero     0x20006064    0xac  tasks.o [1]
+  .bss               zero     0x20006110    0x2c  emac.o [1]
+  .bss               zero     0x2000613c    0x20  image.o [5]
+  .bss               zero     0x2000615c    0x1c  formike128x128x16.o [1]
+  .bss               zero     0x20006178    0x14  rit128x96x4.o [1]
+  .bss               zero     0x2000618c     0xc  timertest.o [1]
+  .bss               zero     0x20006198     0x8  osram128x64x4.o [1]
+  .bss               zero     0x200061a0     0x8  osram128x64x4.o [1]
+  .bss               zero     0x200061a8     0x8  osram128x64x4.o [1]
+  .bss               zero     0x200061b0     0x8  rit128x96x4.o [1]
+  .bss               zero     0x200061b8     0x4  integer.o [1]
+  .bss               zero     0x200061bc     0x1  osram128x64x4.o [1]
+                            - 0x200061bd  0x60b5
+
+"P2", part 3 of 3:                         0x1e0
+  .noinit            uninit   0x200061c0   0x1e0  startup_ewarm.o [1]
+                            - 0x200063a0   0x1e0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x60b5:
+          0x20000108  0x60b5
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x1f (11% of destination):
+          0x00005144    0x1f
+    1 destination range, total size 0x104:
+          0x20000000   0x104
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj: [1]
+    IntQueue.o               496       10      484
+    IntQueueTimer.o           52
+    ParTest.o                 44
+    death.o                  212       26       12
+    emac.o                    72                44
+    formike128x128x16.o    1 216       48       28
+    heap_2.o                 216        1   24 024
+    integer.o                128        8        4
+    list.o                   146
+    main.o                   482    4 997       40
+    osram128x64x4.o          700      574       25
+    port.o                   160        1        4
+    portasm.o                140
+    queue.o                  766
+    rit128x96x4.o            736      574       28
+    startup_ewarm.o            6      256      480
+    tasks.o                1 636       40      280
+    timertest.o              180                12
+    ----------------------------------------------
+    Total:                 7 388    6 535   25 465
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                     8
+    low_level_init.o           4
+    sprintf.o                 52
+    xprintfsmall.o         1 136
+    xsprout.o                 10
+    ----------------------------------------------
+    Total:                 1 210
+
+driverlib.a: [4]
+    ethernet.o                32
+    gpio.o                   288
+    interrupt.o              140       64
+    ssi.o                    136
+    sysctl.o                 668      120
+    timer.o                   88
+    ----------------------------------------------
+    Total:                 1 352      184
+
+grlib.a: [5]
+    context.o                 32
+    fontcmss12.o                    1 500
+    image.o                  716                32
+    line.o                    76
+    rectangle.o              180
+    string.o                 656
+    ----------------------------------------------
+    Total:                 1 660    1 500       32
+
+rt7M_tl.a: [6]
+    ABImemclr4.o               6
+    ABImemcpy.o              112
+    ABImemset.o              102
+    ABImemset48.o             56
+    XXexit.o                  12
+    cexit.o                   10
+    cmain.o                   22
+    cstartup_M.o              12
+    data_init3.o              44
+    memchr.o                  88
+    memcmp.o                  98
+    packbits_init3.o         168
+    strchr.o                  22
+    strlen.o                  54
+    strncpy.o                108
+    zero_init3.o              34
+    ----------------------------------------------
+    Total:                   948
+
+    Gaps                      10        4
+    Linker created                     44
+--------------------------------------------------
+    Grand Total:          12 568    8 267   25 497
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+?main                   0x00005071          Code  Gb  cmain.o [6]
+EthernetIntClear        0x00004f79     0x4  Code  Gb  ethernet.o [4]
+EthernetIntDisable      0x00004f5d     0xa  Code  Gb  ethernet.o [4]
+EthernetIntStatus       0x00004f69     0xe  Code  Gb  ethernet.o [4]
+FaultISR                0x00002071     0x2  Code  Lc  startup_ewarm.o [1]
+Formike128x128x16ColorTranslate
+                        0x0000393d    0x16  Code  Lc  formike128x128x16.o [1]
+Formike128x128x16Flush  0x0000384b     0x2  Code  Lc  formike128x128x16.o [1]
+Formike128x128x16Init   0x000035b5   0x166  Code  Gb  formike128x128x16.o [1]
+Formike128x128x16LineDrawH
+                        0x0000384d    0x3c  Code  Lc  formike128x128x16.o [1]
+Formike128x128x16LineDrawV
+                        0x00003895    0x38  Code  Lc  formike128x128x16.o [1]
+Formike128x128x16PixelDraw
+                        0x00003725    0x34  Code  Lc  formike128x128x16.o [1]
+Formike128x128x16PixelDrawMultiple
+                        0x00003759    0xc8  Code  Lc  formike128x128x16.o [1]
+Formike128x128x16RectFill
+                        0x000038d3    0x5e  Code  Lc  formike128x128x16.o [1]
+GPIODirModeSet          0x00002379    0x1e  Code  Gb  gpio.o [4]
+GPIOPadConfigSet        0x000023ad    0xac  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOOutput   0x00002479    0x10  Code  Gb  gpio.o [4]
+GPIOPinTypeSSI          0x00002489    0x10  Code  Gb  gpio.o [4]
+GPIOPinWrite            0x00002459     0x6  Code  Gb  gpio.o [4]
+GrContextInit           0x00003cd1    0x20  Code  Gb  context.o [5]
+GrImageDraw             0x00003da5   0x2cc  Code  Gb  image.o [5]
+GrLineDrawH             0x00004071    0x4c  Code  Gb  line.o [5]
+GrRectFill              0x00003cf1    0xb4  Code  Gb  rectangle.o [5]
+GrStringDraw            0x00003a41   0x290  Code  Gb  string.o [5]
+IntDefaultHandler       0x00002073     0x2  Code  Lc  startup_ewarm.o [1]
+IntEnable               0x00002aed    0x60  Code  Gb  interrupt.o [4]
+IntPrioritySet          0x00002ac9    0x20  Code  Gb  interrupt.o [4]
+NmiSR                   0x0000206f     0x2  Code  Lc  startup_ewarm.o [1]
+OSRAM128x64x4Clear      0x00004497    0x36  Code  Gb  osram128x64x4.o [1]
+OSRAM128x64x4Enable     0x000045d7    0x4a  Code  Gb  osram128x64x4.o [1]
+OSRAM128x64x4ImageDraw  0x0000457f    0x50  Code  Gb  osram128x64x4.o [1]
+OSRAM128x64x4Init       0x0000462f    0x6e  Code  Gb  osram128x64x4.o [1]
+OSRAM128x64x4StringDraw
+                        0x000044cd    0xaa  Code  Gb  osram128x64x4.o [1]
+OSRAMWriteCommand       0x0000442d    0x2c  Code  Lc  osram128x64x4.o [1]
+OSRAMWriteData          0x00004459    0x2c  Code  Lc  osram128x64x4.o [1]
+RIT128x96x4Clear        0x00004133    0x38  Code  Gb  rit128x96x4.o [1]
+RIT128x96x4Enable       0x00004275    0x4a  Code  Gb  rit128x96x4.o [1]
+RIT128x96x4ImageDraw    0x0000421d    0x50  Code  Gb  rit128x96x4.o [1]
+RIT128x96x4Init         0x000042cd    0x86  Code  Gb  rit128x96x4.o [1]
+RIT128x96x4StringDraw   0x0000416b    0xaa  Code  Gb  rit128x96x4.o [1]
+RITWriteCommand         0x000040c5    0x32  Code  Lc  rit128x96x4.o [1]
+RITWriteData            0x000040f7    0x32  Code  Lc  rit128x96x4.o [1]
+Region$$Table$$Base     0x00005044           --   Gb  - Linker created -
+Region$$Table$$Limit    0x00005070           --   Gb  - Linker created -
+SSIConfigSetExpClk      0x000043a5    0x42  Code  Gb  ssi.o [4]
+SSIDataGet              0x0000440d     0xc  Code  Gb  ssi.o [4]
+SSIDataGetNonBlocking   0x00004419    0x12  Code  Gb  ssi.o [4]
+SSIDataPut              0x00004401     0xa  Code  Gb  ssi.o [4]
+SSIDisable              0x000043f5     0xc  Code  Gb  ssi.o [4]
+SSIEnable               0x000043e9     0xc  Code  Gb  ssi.o [4]
+SysCtlClockGet          0x00002249   0x130  Code  Gb  sysctl.o [4]
+SysCtlClockSet          0x00002139   0x108  Code  Gb  sysctl.o [4]
+SysCtlDelay             0x00002131     0x8  Code  Gb  sysctl.o [4]
+SysCtlLDOSet            0x00002125     0x6  Code  Gb  sysctl.o [4]
+SysCtlPeripheralEnable  0x00002101    0x12  Code  Gb  sysctl.o [4]
+SysCtlPeripheralPresent
+                        0x000020dd    0x24  Code  Gb  sysctl.o [4]
+Timer0IntHandler        0x00002981    0x32  Code  Gb  timertest.o [1]
+TimerConfigure          0x00002a85    0x24  Code  Gb  timer.o [4]
+TimerEnable             0x00002a71     0xe  Code  Gb  timer.o [4]
+TimerIntClear           0x00002ac5     0x4  Code  Gb  timer.o [4]
+TimerIntEnable          0x00002ab9     0xa  Code  Gb  timer.o [4]
+TimerLoadSet            0x00002aa9    0x10  Code  Gb  timer.o [4]
+WriteCommand            0x00003595    0x20  Code  Lc  formike128x128x16.o [1]
+WriteData               0x00003581    0x14  Code  Lc  formike128x128x16.o [1]
+_LitobSmall             0x00002ef7    0xc6  Code  Lc  xprintfsmall.o [3]
+_PrintfSmall            0x00002b55   0x374  Code  Gb  xprintfsmall.o [3]
+_SProut                 0x00002003     0xa  Code  Gb  xsprout.o [3]
+__aeabi_memclr4         0x000040bd          Code  Gb  ABImemclr4.o [6]
+__aeabi_memcpy          0x00002a01          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy4         0x00002a1b          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy8         0x00002a1b          Code  Gb  ABImemcpy.o [6]
+__aeabi_memset          0x00002075          Code  Gb  ABImemset.o [6]
+__aeabi_memset4         0x00001b9d          Code  Gb  ABImemset48.o [6]
+__aeabi_memset8         0x00001b9d          Code  Gb  ABImemset48.o [6]
+__cmain                 0x00005071          Code  Gb  cmain.o [6]
+__exit                  0x000050a1          Code  Gb  XXexit.o [6]
+__iar_Memchr            0x00002fdd          Code  Gb  memchr.o [6]
+__iar_Memset            0x00002075          Code  Gb  ABImemset.o [6]
+__iar_Memset4_word      0x00001ba5          Code  Gb  ABImemset48.o [6]
+__iar_Memset8_word      0x00001ba5          Code  Gb  ABImemset48.o [6]
+__iar_Memset_word       0x0000207d          Code  Gb  ABImemset.o [6]
+__iar_Strchr            0x00002fc5          Code  Gb  strchr.o [6]
+__iar_data_init3        0x00004ff1    0x2c  Code  Gb  data_init3.o [6]
+__iar_packbits_init3    0x00004d71    0xa8  Code  Gb  packbits_init3.o [6]
+__iar_program_start     0x00005109          Code  Gb  cstartup_M.o [6]
+__iar_zero_init3        0x00001cd3    0x22  Code  Gb  zero_init3.o [6]
+__low_level_init        0x00005087     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000   0x100  Data  Gb  startup_ewarm.o [1]
+_call_main              0x0000507d          Code  Gb  cmain.o [6]
+_exit                   0x00005095          Code  Gb  cexit.o [6]
+_main                   0x00005083          Code  Gb  cmain.o [6]
+exit                    0x0000508b     0x8  Code  Gb  exit.o [3]
+g_bSSIEnabled           0x200061bc     0x1  Data  Lc  osram128x64x4.o [1]
+g_bSSIEnabled           0x20006178     0x1  Data  Lc  rit128x96x4.o [1]
+g_pucBuffer             0x200061b0     0x8  Data  Lc  rit128x96x4.o [1]
+g_pucCmss12Data         0x0000306c   0x514  Data  Lc  fontcmss12.o [5]
+g_pucDictionary         0x2000613c    0x20  Data  Lc  image.o [5]
+g_pucFont               0x000048d8   0x1e0  Data  Lc  osram128x64x4.o [1]
+g_pucFont               0x00004ac4   0x1e0  Data  Lc  rit128x96x4.o [1]
+g_pucOSRAM128x64x4HorizontalInc
+                        0x000020da     0x2  Data  Lc  osram128x64x4.o [1]
+g_pucOSRAM128x64x4Init  0x00004e74    0x50  Data  Lc  osram128x64x4.o [1]
+g_pucOSRAM128x64x4VerticalInc
+                        0x00004ab8     0x2  Data  Lc  osram128x64x4.o [1]
+g_pucRIT128x96x4HorizontalInc
+                        0x000050f0     0x2  Data  Lc  rit128x96x4.o [1]
+g_pucRIT128x96x4Init    0x00004ec4    0x50  Data  Lc  rit128x96x4.o [1]
+g_pucRIT128x96x4VerticalInc
+                        0x00004ca4     0x2  Data  Lc  rit128x96x4.o [1]
+g_pulDCRegs             0x000050e0    0x10  Data  Lc  sysctl.o [4]
+g_pulRCGCRegs           0x000050fc     0xc  Data  Lc  sysctl.o [4]
+g_pulRegs               0x00004f7c    0x40  Data  Lc  interrupt.o [4]
+g_pulXtals              0x00004e18    0x5c  Data  Lc  sysctl.o [4]
+g_sFontCmss12           0x00004ca8    0xc8  Data  Gb  fontcmss12.o [5]
+g_sFormike128x128x16    0x0000501c    0x28  Data  Gb  formike128x128x16.o [1]
+main                    0x00001e21    0x76  Code  Gb  main.o [1]
+memchr                  0x00002fdd          Code  Gb  memchr.o [6]
+memcmp                  0x0000200d          Code  Gb  memcmp.o [6]
+pad                     0x00002ec9    0x2e  Code  Lc  xprintfsmall.o [3]
+pcTraceBuffer           0x200060e4     0x4  Data  Lc  tasks.o [1]
+pcTraceBufferEnd        0x20000060     0x4  Data  Lc  tasks.o [1]
+pcTraceBufferStart      0x2000005c     0x4  Data  Lc  tasks.o [1]
+prvAddCurrentTaskToDelayedList
+                        0x000019b7    0x34  Code  Lc  tasks.o [1]
+prvCopyDataFromQueue    0x0000272f    0x24  Code  Lc  queue.o [1]
+prvCopyDataToQueue      0x000026d3    0x5c  Code  Lc  queue.o [1]
+prvIdleTask             0x00001969    0x4e  Code  Lc  tasks.o [1]
+prvRecordValue_NormallyEmpty
+                        0x00004709    0x22  Code  Lc  IntQueue.o [1]
+prvRecordValue_NormallyFull
+                        0x000046e9    0x20  Code  Lc  IntQueue.o [1]
+prvUnlockQueue          0x00002753    0x60  Code  Lc  queue.o [1]
+pucBasicBitmap          0x00000134   0xc84  Data  Gb  main.o [1]
+pucGrLibBitmap          0x00000db8   0x6a8  Data  Gb  main.o [1]
+pulStack                0x200061c0   0x1e0  Data  Lc  startup_ewarm.o [1]
+pvPortMalloc            0x00001ac5    0x9e  Code  Gb  heap_2.o [1]
+pxCurrentTCB            0x20006064     0x4  Data  Gb  tasks.o [1]
+pxDelayedTaskList       0x200060cc     0x4  Data  Lc  tasks.o [1]
+pxOverflowDelayedTaskList
+                        0x200060d0     0x4  Data  Lc  tasks.o [1]
+pxPortInitialiseStack   0x00001cf5    0x1a  Code  Gb  port.o [1]
+pxReadyTasksLists       0x20006068    0x64  Data  Lc  tasks.o [1]
+sContext                0x2000615c    0x1c  Data  Lc  formike128x128x16.o [1]
+sprintf                 0x000029cd    0x34  Code  Gb  sprintf.o [3]
+strchr                  0x00002fc5          Code  Gb  strchr.o [6]
+strlen                  0x00003035          Code  Gb  strlen.o [6]
+strncpy                 0x00001bd5          Code  Gb  strncpy.o [6]
+ucNormallyEmptyReceivedValues
+                        0x20005ed4    0xc8  Data  Lc  IntQueue.o [1]
+ucNormallyFullReceivedValues
+                        0x20005f9c    0xc8  Data  Lc  IntQueue.o [1]
+uip_buf                 0x20006118     0x4  Data  Gb  emac.o [1]
+ulGPIOBase              0x20006180     0x4  Data  Gb  rit128x96x4.o [1]
+ulGPIOId                0x2000617c     0x4  Data  Gb  rit128x96x4.o [1]
+ulMaxJitter             0x2000618c     0x4  Data  Gb  timertest.o [1]
+ulNextTxSpace           0x20006130     0x4  Data  Lc  emac.o [1]
+ulOLEDDC_PIN            0x20006184     0x4  Data  Gb  rit128x96x4.o [1]
+ulOLEDEN_PIN            0x20006188     0x4  Data  Gb  rit128x96x4.o [1]
+ulRxLength              0x2000611c    0x14  Data  Lc  emac.o [1]
+usCreationCount         0x200000e8     0x2  Data  Lc  death.o [1]
+usTaskCheckFreeStackSpace
+                        0x000019eb    0x14  Code  Lc  tasks.o [1]
+uxCriticalNesting       0x20000100     0x4  Data  Lc  port.o [1]
+uxCurrentNumberOfTasks  0x200060d4     0x4  Data  Lc  tasks.o [1]
+uxHighPriorityLoops1    0x20000074     0x4  Data  Lc  IntQueue.o [1]
+uxHighPriorityLoops2    0x20000078     0x4  Data  Lc  IntQueue.o [1]
+uxLowPriorityLoops1     0x2000007c     0x4  Data  Lc  IntQueue.o [1]
+uxLowPriorityLoops2     0x20000080     0x4  Data  Lc  IntQueue.o [1]
+uxMissedTicks           0x20000048     0x4  Data  Lc  tasks.o [1]
+uxPreviousTask          0x20000068     0x4  Data  Lc  tasks.o [1]
+uxSchedulerSuspended    0x200060e0     0x4  Data  Lc  tasks.o [1]
+uxTaskGetNumberOfTasks  0x00001729     0x8  Code  Gb  tasks.o [1]
+uxTaskGetStackHighWaterMark
+                        0x000019ff     0xa  Code  Gb  tasks.o [1]
+uxTaskNumber            0x20000054     0x4  Data  Lc  tasks.o [1]
+uxTasksDeleted          0x20000028     0x4  Data  Lc  tasks.o [1]
+uxTasksRunningAtStart   0x200000ec     0x4  Data  Lc  death.o [1]
+uxTopReadyPriority      0x200060dc     0x4  Data  Lc  tasks.o [1]
+uxTopUsedPriority       0x20000040     0x4  Data  Lc  tasks.o [1]
+uxValueForNormallyEmptyQueue
+                        0x20000090     0x4  Data  Gb  IntQueue.o [1]
+uxValueForNormallyFullQueue
+                        0x20000094     0x4  Data  Gb  IntQueue.o [1]
+vApplicationStackOverflowHook
+                        0x00002001     0x2  Code  Gb  main.o [1]
+vApplicationTickHook    0x00001e97    0x3a  Code  Gb  main.o [1]
+vCompeteingIntMathTask  0x000027e3    0x42  Code  Lc  integer.o [1]
+vCreateSuicidalTasks    0x00002845    0x32  Code  Gb  death.o [1]
+vCreateTasks            0x000028af    0x56  Code  Lc  death.o [1]
+vEMAC_ISR               0x00004f15    0x3e  Code  Gb  emac.o [1]
+vFormike128x128x16Clear
+                        0x00003953    0x20  Code  Gb  formike128x128x16.o [1]
+vFormike128x128x16ImageDraw
+                        0x000039f1    0x10  Code  Gb  formike128x128x16.o [1]
+vFormike128x128x16Init  0x000039ab    0x32  Code  Gb  formike128x128x16.o [1]
+vFormike128x128x16StringDraw
+                        0x00003973    0x2e  Code  Gb  formike128x128x16.o [1]
+vListInitialise         0x00001c41    0x1a  Code  Gb  list.o [1]
+vListInitialiseItem     0x00001c5b     0x6  Code  Gb  list.o [1]
+vListInsert             0x00001c7d    0x32  Code  Gb  list.o [1]
+vListInsertEnd          0x00001c61    0x1c  Code  Gb  list.o [1]
+vListRemove             0x00001caf    0x24  Code  Gb  list.o [1]
+vOLEDTask               0x00001ed1    0xd0  Code  Lc  main.o [1]
+vParTestInitialise      0x00002499    0x28  Code  Gb  ParTest.o [1]
+vPortClearInterruptMask
+                        0x00001ddf          Code  Gb  portasm.o [1]
+vPortEnterCritical      0x00001d47    0x10  Code  Gb  port.o [1]
+vPortExitCritical       0x00001d57    0x12  Code  Gb  port.o [1]
+vPortFree               0x00001b63    0x30  Code  Gb  heap_2.o [1]
+vPortSVCHandler         0x00001ded          Code  Gb  portasm.o [1]
+vPortSetInterruptMask   0x00001dd1          Code  Gb  portasm.o [1]
+vPortStartFirstTask     0x00001e09          Code  Gb  portasm.o [1]
+vPortYieldFromISR       0x00001d3d     0xa  Code  Gb  port.o [1]
+vSetMSP                 0x00001d95          Code  Gb  portasm.o [1]
+vSetupHighFrequencyTimer
+                        0x00002919    0x68  Code  Gb  timertest.o [1]
+vStartIntegerMathTasks  0x000027c5    0x1e  Code  Gb  integer.o [1]
+vSuicidalTask           0x00002877    0x38  Code  Lc  death.o [1]
+vT2InterruptHandler     0x00004fbd    0x10  Code  Gb  IntQueueTimer.o [1]
+vT3InterruptHandler     0x00004fd5    0x14  Code  Gb  IntQueueTimer.o [1]
+vTaskDelay              0x0000160f    0x2c  Code  Gb  tasks.o [1]
+vTaskDelete             0x000015b5    0x5a  Code  Gb  tasks.o [1]
+vTaskIncrementTick      0x00001731    0x9a  Code  Gb  tasks.o [1]
+vTaskMissedYield        0x0000195f     0x8  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventList   0x0000188b    0x2e  Code  Gb  tasks.o [1]
+vTaskPriorityDisinherit
+                        0x00001a77    0x36  Code  Gb  tasks.o [1]
+vTaskPriorityInherit    0x00001a0f    0x4c  Code  Gb  tasks.o [1]
+vTaskSetTimeOutState    0x00001905     0xe  Code  Gb  tasks.o [1]
+vTaskStartScheduler     0x0000163b    0x3e  Code  Gb  tasks.o [1]
+vTaskSuspendAll         0x00001679     0xc  Code  Gb  tasks.o [1]
+vTaskSwitchContext      0x000017cb    0xb4  Code  Gb  tasks.o [1]
+xAreIntegerMathsTaskStillRunning
+                        0x00002825    0x10  Code  Gb  integer.o [1]
+xCreatedTask            0x200000f0     0x4  Data  Gb  death.o [1]
+xDelayedTaskList1       0x200060e8    0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x200060fc    0x14  Data  Lc  tasks.o [1]
+xEMACSemaphore          0x20006110     0x4  Data  Gb  emac.o [1]
+xEnd                    0x20000108     0x8  Data  Lc  heap_2.o [1]
+xErrorLine              0x20000088     0x4  Data  Lc  IntQueue.o [1]
+xErrorStatus            0x20000084     0x4  Data  Lc  IntQueue.o [1]
+xFirstTimerHandler      0x00004733    0x78  Code  Gb  IntQueue.o [1]
+xFreeBytesRemaining     0x200000fc     0x4  Data  Lc  heap_2.o [1]
+xHeap                   0x20000110  0x5dc0  Data  Lc  heap_2.o [1]
+xHighPriorityNormallyEmptyTask1
+                        0x20000098     0x4  Data  Gb  IntQueue.o [1]
+xHighPriorityNormallyEmptyTask2
+                        0x2000009c     0x4  Data  Gb  IntQueue.o [1]
+xHighPriorityNormallyFullTask1
+                        0x200000a0     0x4  Data  Gb  IntQueue.o [1]
+xHighPriorityNormallyFullTask2
+                        0x200000a4     0x4  Data  Gb  IntQueue.o [1]
+xMACInterruptSemaphore  0x20006114     0x4  Data  Gb  emac.o [1]
+xMissedYield            0x2000004c     0x4  Data  Lc  tasks.o [1]
+xNextTaskUnblockTime    0x20000058     0x4  Data  Lc  tasks.o [1]
+xNormallyEmptyQueue     0x2000006c     0x4  Data  Lc  IntQueue.o [1]
+xNormallyFullQueue      0x20000070     0x4  Data  Lc  IntQueue.o [1]
+xNumOfOverflows         0x20000050     0x4  Data  Lc  tasks.o [1]
+xOLEDQueue              0x200000c0     0x4  Data  Gb  main.o [1]
+xPendingReadyList       0x20000000    0x14  Data  Lc  tasks.o [1]
+xPortPendSVHandler      0x00001d9b          Code  Gb  portasm.o [1]
+xPortStartScheduler     0x00001d0f    0x2e  Code  Gb  port.o [1]
+xPortSysTickHandler     0x00001d69    0x1a  Code  Gb  port.o [1]
+xQueueCreate            0x000024c5    0x5a  Code  Gb  queue.o [1]
+xQueueGenericReceive    0x0000257d    0xf8  Code  Gb  queue.o [1]
+xQueueGenericSendFromISR
+                        0x0000252f    0x4e  Code  Gb  queue.o [1]
+xQueueIsQueueFullFromISR
+                        0x000027b3    0x10  Code  Gb  queue.o [1]
+xQueueReceiveFromISR    0x00002687    0x4c  Code  Gb  queue.o [1]
+xSchedulerRunning       0x20000044     0x4  Data  Lc  tasks.o [1]
+xSecondTimerHandler     0x000047ab    0xd2  Code  Gb  IntQueue.o [1]
+xStart                  0x200000f4     0x8  Data  Lc  heap_2.o [1]
+xSuspendedTaskList      0x2000002c    0x14  Data  Lc  tasks.o [1]
+xTaskCheck              0x200061b8     0x4  Data  Lc  integer.o [1]
+xTaskCheckForTimeOut    0x00001913    0x4c  Code  Gb  tasks.o [1]
+xTaskGenericCreate      0x00001461   0x154  Code  Gb  tasks.o [1]
+xTaskGetCurrentTaskHandle
+                        0x00001a09     0x6  Code  Gb  tasks.o [1]
+xTaskRemoveFromEventList
+                        0x000018b9    0x4c  Code  Gb  tasks.o [1]
+xTaskResumeAll          0x00001685    0x94  Code  Gb  tasks.o [1]
+xTasksWaitingTermination
+                        0x20000014    0x14  Data  Lc  tasks.o [1]
+xTickCount              0x200060d8     0x4  Data  Lc  tasks.o [1]
+xTracing                0x20000064     0x4  Data  Lc  tasks.o [1]
+xWasSuspended           0x2000008c     0x4  Data  Lc  IntQueue.o [1]
+
+
+[1] = C:\StellarisWare\boards\FreeRTOS\Demo\CORTEX_LM3Sxxxx_IAR_Keil\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = driverlib.a
+[5] = grlib.a
+[6] = rt7M_tl.a
+
+  12 568 bytes of readonly  code memory
+   8 267 bytes of readonly  data memory
+  25 497 bytes of readwrite data memory
+
+Errors: none
+Warnings: 1
